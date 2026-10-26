@@ -1,0 +1,38 @@
+{
+  "_commentaire": "Toute la configuration du bot. Change ce que tu veux ici, jamais dans claude_mc.py. Apres modification : systemctl restart claude-mc",
+
+  "declencheur": "!claude",
+  "joueurs_autorises": ["Panoramix93"],
+  "ouvert_a_tous": false,
+  "en_pause": false,
+
+  "_limites": "Les garde-fous. questions_par_joueur_par_jour et plafond_usd_par_jour se remettent a zero chaque jour a minuit UTC.",
+  "questions_par_joueur_par_jour": 20,
+  "plafond_usd_par_jour": 0.25,
+  "delai_entre_questions_s": 20,
+  "longueur_max_question": 256,
+  "max_tokens_reponse": 300,
+
+  "_modele": "Haiku est largement suffisant et le moins cher. Verifie le tarif sur console.anthropic.com avant de changer de modele, et mets a jour tarif_usd_par_million en meme temps.",
+  "modele": "claude-haiku-4-5-20251001",
+  "tarif_usd_par_million": {
+    "entree": 1.0,
+    "sortie": 5.0
+  },
+  "timeout_api": 45,
+
+  "_affichage": "reponse_privee a true : seul celui qui demande voit la reponse. A false : tout le monde la voit.",
+  "reponse_privee": false,
+  "couleur_reponse": "aqua",
+
+  "_chemins": "fichier_log est le latest.log du serveur Minecraft. Si le bot tourne dans un autre conteneur, monte le dossier logs en lecture seule.",
+  "fichier_log": "/opt/atm10/logs/latest.log",
+  "fichier_cle_api": "cle_api",
+  "fichier_connaissances": "atm10.md",
+
+  "rcon": {
+    "hote": "127.0.0.1",
+    "port": 25575,
+    "mot_de_passe": "A_REMPLACER"
+  }
+}
