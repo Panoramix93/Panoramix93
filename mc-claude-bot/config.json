@@ -8,16 +8,16 @@
 
   "_limites": "Les garde-fous. questions_par_joueur_par_jour et plafond_usd_par_jour se remettent a zero chaque jour a minuit UTC.",
   "questions_par_joueur_par_jour": 20,
-  "plafond_usd_par_jour": 0.25,
+  "plafond_usd_par_jour": 1.0,
   "delai_entre_questions_s": 20,
   "longueur_max_question": 256,
-  "max_tokens_reponse": 500,
+  "max_tokens_reponse": 600,
 
-  "_modele": "Haiku est largement suffisant et le moins cher. Verifie le tarif sur console.anthropic.com avant de changer de modele, et mets a jour tarif_usd_par_million en meme temps.",
-  "modele": "claude-haiku-4-5-20251001",
+  "_modele": "Sonnet connait vraiment ATM10 et explique au lieu de renvoyer vers JEI. Environ 0,5 centime la question. Haiku coute 20 fois moins mais se defausse souvent. Si tu changes de modele, mets a jour tarif_usd_par_million en meme temps.",
+  "modele": "claude-sonnet-5-5",
   "tarif_usd_par_million": {
-    "entree": 1.0,
-    "sortie": 5.0
+    "entree": 2.0,
+    "sortie": 10.0
   },
   "timeout_api": 45,
 
