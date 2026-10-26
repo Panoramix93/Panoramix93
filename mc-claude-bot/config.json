@@ -11,7 +11,7 @@
   "plafond_usd_par_jour": 0.25,
   "delai_entre_questions_s": 20,
   "longueur_max_question": 256,
-  "max_tokens_reponse": 300,
+  "max_tokens_reponse": 500,
 
   "_modele": "Haiku est largement suffisant et le moins cher. Verifie le tarif sur console.anthropic.com avant de changer de modele, et mets a jour tarif_usd_par_million en meme temps.",
   "modele": "claude-haiku-4-5-20251001",

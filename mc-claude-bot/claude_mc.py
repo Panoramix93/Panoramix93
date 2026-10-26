@@ -247,10 +247,20 @@ def demander_a_claude(cfg, question, pseudo):
     with urllib.request.urlopen(req, timeout=cfg.get("timeout_api", 45)) as r:
         rep = json.loads(r.read().decode("utf-8"))
 
-    texte = "".join(
-        b.get("text", "") for b in rep.get("content", []) if b.get("type") == "text"
-    ).strip()
+    # On prend tout bloc qui porte du texte, quel que soit son type : selon le
+    # modele la reponse peut contenir des blocs de reflexion avant le texte.
+    blocs = rep.get("content", [])
+    texte = "".join(b.get("text", "") for b in blocs if isinstance(b, dict)).strip()
     u = rep.get("usage", {})
+
+    if not texte:
+        # On veut savoir POURQUOI c'est vide, pas juste que ca l'est.
+        types = [b.get("type") for b in blocs if isinstance(b, dict)]
+        log(f"REPONSE VIDE | stop_reason={rep.get('stop_reason')} | "
+            f"blocs={types} | modele={rep.get('model')} | "
+            f"tokens={u.get('input_tokens')}+{u.get('output_tokens')}")
+        log(f"REPONSE VIDE (brut) : {json.dumps(rep, ensure_ascii=False)[:600]}")
+
     return texte, u.get("input_tokens", 0), u.get("output_tokens", 0)
 
 
@@ -377,7 +387,8 @@ def main():
             continue
 
         if not reponse:
-            dire(rcon, "Je n'ai rien a dire la-dessus.", "gray", pseudo)
+            dire(rcon, "Je n'ai pas reussi a repondre, Adel a les details.",
+                 "gray", pseudo)
             continue
 
         c = cout(cfg, e_in, e_out)
