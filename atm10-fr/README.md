@@ -17,6 +17,11 @@
   peuvent pas voyager dans le pack de ressources, chaque joueur doit les copier
   dans son instance. Une mise à jour du modpack les remet en anglais.
 
+- **`ATM10-FR-sources.zip`** — les fichiers sources, découpés mod par mod pour
+  pouvoir être envoyés en amont. Un dossier par namespace, chaque `fr_fr.json`
+  déjà au chemin qu'il doit avoir dans le dépôt du mod, plus les guides.
+  Aucun crédit demandé, servez-vous.
+
 ## Configuration serveur
 
 Dans `server.properties` :
