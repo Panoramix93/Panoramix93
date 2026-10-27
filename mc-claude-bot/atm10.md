@@ -31,11 +31,33 @@ joueur cite cette info, dis-lui qu'elle est périmée.
 
 **Le minerai explose quand on le mine.** Prévoir de l'armure.
 
+Il faut au moins une pioche en **Netherite** pour le miner.
+
 ### Vibranium et Unobtainium
 
-- **Vibranium** : dans le Nether, aussi à l'air libre.
-- **Unobtainium** : dans l'End, même principe.
-- Même logique que l'Allthemodium : on explore, on ne tunnelle pas.
+Ces emplacements viennent des infobulles du modpack lui-même, c'est la
+source la plus fiable.
+
+- **Vibranium** : dans **n'importe quel biome du Nether**, et aussi dans
+  **L'Autre**. Pioche en **Allthemodium** minimum.
+- **Unobtainium** : dans l'End, et précisément dans le biome **Hautes terres de
+  l'End** (End Highlands), donc sur les **îles extérieures**, pas sur l'île
+  centrale du dragon. On y va par le portail qui apparaît après le dragon.
+  Pioche en **Vibranium** minimum.
+
+Même logique que l'Allthemodium : on explore, on ne tunnelle pas.
+
+### Les trois modèles de forge (smithing templates)
+
+Beaucoup de joueurs les cherchent au mauvais endroit. Emplacements exacts,
+tirés des infobulles du modpack :
+
+- **Allthemodium Upgrade** : dans l'**argile suspecte** des **Cités antiques**
+  (à brosser, comme en archéologie vanilla).
+- **Vibranium Upgrade** : dans le **sable des âmes suspect** des **Bastions**.
+- **Unobtainium Upgrade** : **lâché par le générateur d'épreuve** (Trial
+  Spawner) de la **Library of the Dungeon**, à l'intérieur de **L'Autre**. Ce
+  n'est pas un butin de coffre : il faut déclencher le spawner et le vaincre.
 
 ### Teleport Pad (pour aller dans les dimensions Allthemodium)
 
@@ -60,7 +82,10 @@ Selon la dimension où on le pose, il mène ailleurs :
   principal. Pas de structures, pas de nuit, faite pour l'extraction.
 - **L'Autre** (The Other) : dimension d'ATM, accessible depuis le Nether.
   Contient des villages et des pyramides avec du butin.
-- **The Beyond** : depuis l'End.
+- **The Beyond** : depuis l'End. C'est un **monde de vide, façon skyblock** :
+  pas de structures à parcourir, on arrive sur une petite plateforme générée
+  par le Teleport Pad. Un joueur qui n'y voit rien ne subit pas un bug, c'est
+  sa nature. **L'Unobtainium n'est PAS là** : il est dans l'End.
 - **Twilight Forest**, **Eternal Starlight**, **Ad Astra** (les planètes),
   **Undergarden**, **Aether** : dimensions ajoutées par leurs mods respectifs,
   chacune avec sa méthode d'accès.
